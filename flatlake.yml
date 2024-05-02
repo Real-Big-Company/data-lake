@@ -1,0 +1,4 @@
+collections:
+  - path: .
+    output_key: news
+    glob: "**/news/*.md"
