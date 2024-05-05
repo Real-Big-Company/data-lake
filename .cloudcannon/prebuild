@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+npx -y flatlake@0.4.1

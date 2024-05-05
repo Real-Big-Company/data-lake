@@ -1,4 +1,29 @@
 collections:
-  - path: .
-    output_key: news
-    glob: "**/news/*.md"
+  - output_key: news
+    inputs:
+      - path: liminal/site/news
+        glob: "**/*.md"
+        sub_key: liminal
+        merge_data:
+          division: liminal
+          image_url: https://liminal.realbig.company/
+      - path: static/site/news
+        glob: "**/*.md"
+        sub_key: static
+        merge_data:
+          division: static
+          image_url: https://static.realbig.company/
+  - output_key: reports
+    inputs:
+      - path: liminal/site/reports
+        glob: "**/*.md"
+        sub_key: liminal
+        merge_data:
+          division: liminal
+          image_url: https://liminal.realbig.company/
+      - path: static/site/reports
+        glob: "**/*.md"
+        sub_key: static
+        merge_data:
+          division: static
+          image_url: https://static.realbig.company/
