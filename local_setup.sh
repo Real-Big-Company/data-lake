@@ -5,3 +5,5 @@
 
 [ ! -e liminal ] && ln -s ../liminal liminal
 [ ! -e static ] && ln -s ../static static
+[ ! -e planar ] && ln -s ../planar planar
+[ ! -e xity ] && ln -s ../xity xity

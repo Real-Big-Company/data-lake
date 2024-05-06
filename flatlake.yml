@@ -1,29 +1,59 @@
 collections:
   - output_key: news
     inputs:
+      # Liminal Division News
       - path: liminal/site/news
-        glob: "**/*.md"
         sub_key: liminal
         merge_data:
           division: liminal
-          image_url: https://liminal.realbig.company/
+          division_url: https://liminal.realbig.company
+      # Static Division News
       - path: static/site/news
-        glob: "**/*.md"
         sub_key: static
         merge_data:
           division: static
-          image_url: https://static.realbig.company/
+          division_url: https://static.realbig.company
+      # Planar Division News
+      - path: planar/site/news
+        sub_key: planar
+        merge_data:
+          division: planar
+          division_url: https://planar.realbig.company
+      # XIty Division News
+      - path: xity/site/news
+        sub_key: xity
+        merge_data:
+          division: xity
+          division_url: https://xity.realbig.company
+    list_elements:
+      - "data"
+      - "content"
   - output_key: reports
     inputs:
+      # Liminal Division Reports
       - path: liminal/site/reports
-        glob: "**/*.md"
         sub_key: liminal
         merge_data:
           division: liminal
-          image_url: https://liminal.realbig.company/
+          division_url: https://liminal.realbig.company
+      # Static Division Reports
       - path: static/site/reports
-        glob: "**/*.md"
         sub_key: static
         merge_data:
           division: static
-          image_url: https://static.realbig.company/
+          division_url: https://static.realbig.company
+      # Planar Division Reports
+      - path: planar/site/reports
+        sub_key: planar
+        merge_data:
+          division: planar
+          division_url: https://planar.realbig.company
+      # XIty Division Reports
+      - path: xity/site/reports
+        sub_key: xity
+        merge_data:
+          division: xity
+          division_url: https://xity.realbig.company
+    list_elements:
+      - "data"
+      - "content"
