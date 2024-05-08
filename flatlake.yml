@@ -2,25 +2,25 @@ collections:
   - output_key: news
     inputs:
       # Liminal Division News
-      - path: liminal/site/news
+      - path: liminal/news
         sub_key: liminal
         merge_data:
           division: liminal
           division_url: https://liminal.realbig.company
       # Static Division News
-      - path: static/site/news
+      - path: static/news
         sub_key: static
         merge_data:
           division: static
           division_url: https://static.realbig.company
       # Planar Division News
-      - path: planar/site/news
+      - path: planar/news
         sub_key: planar
         merge_data:
           division: planar
           division_url: https://planar.realbig.company
       # XIty Division News
-      - path: xity/site/news
+      - path: xity/news
         sub_key: xity
         merge_data:
           division: xity
@@ -31,25 +31,25 @@ collections:
   - output_key: reports
     inputs:
       # Liminal Division Reports
-      - path: liminal/site/reports
+      - path: liminal/reports
         sub_key: liminal
         merge_data:
           division: liminal
           division_url: https://liminal.realbig.company
       # Static Division Reports
-      - path: static/site/reports
+      - path: static/reports
         sub_key: static
         merge_data:
           division: static
           division_url: https://static.realbig.company
       # Planar Division Reports
-      - path: planar/site/reports
+      - path: planar/reports
         sub_key: planar
         merge_data:
           division: planar
           division_url: https://planar.realbig.company
       # XIty Division Reports
-      - path: xity/site/reports
+      - path: xity/reports
         sub_key: xity
         merge_data:
           division: xity
